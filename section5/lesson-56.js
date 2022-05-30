@@ -1,4 +1,4 @@
-// You reassign elements to a const array, but you cannot change
+// You can reassign elements to a const array, but you cannot change
 // the array assignment itself.
 const myArray = [1, 2, 3, 4];
 myArray.push(5);
