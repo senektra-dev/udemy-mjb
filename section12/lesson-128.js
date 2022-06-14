@@ -6,7 +6,7 @@ const deck = {
 	cards          : [],
 	drawn          : [],
 
-	initializeDeck(shuffle) {
+	initializeDeck(shuffle = false) {
 		this.drawn = [];
 		this.cards = [];
 
@@ -56,6 +56,6 @@ function makeDeck(shuffle) {
 }
 
 const deck1 = makeDeck(true);
-const deck2 = makeDeck(false);
+const deck2 = makeDeck();
 
 console.log('done');
