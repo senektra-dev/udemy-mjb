@@ -1,7 +1,7 @@
 // Section 14 - Lesson 141
 // Setting and Getting Attributes.
 
-let range = document.querySelector('input[type="range"]');
+const range = document.querySelector('input[type="range"]');
 // Set and get attributes.
 // https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute
 console.log(range.getAttribute('max'));

@@ -2,13 +2,13 @@
 // removeChild & remove
 
 // Select li to remove
-let ul = document.querySelector('section ul');
-let removeMe = ul.querySelector('.special');
+const ul = document.querySelector('section ul');
+const removeMe = ul.querySelector('.special');
 
 // Remove li
 // htp://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild
-// let deleted = ul.removeChild(removeMe);
-// console.log(deleted);
+// const deconsted = ul.removeChild(removeMe);
+// console.log(deconsted);
 
 // or
 

@@ -1,11 +1,7 @@
 // Seciton 14 - app.js
 
-// The lesson javscript files found in this directory use let for variable declarations.
-// Doing so will let us use the same variable names in all the lessons and not cause
-// variable name conflicts when loading lessons.
-
 // Set this to true to automatically load placeholder lesson.
-let autoLoadPlaceholder = true;
+let autoLoadPlaceholder = false;
 
 /**
  * It removes the current script tag from the head of the document, then creates a
@@ -26,7 +22,7 @@ function setLessonJsScript(lesson) {
   document.head.appendChild(newScript);
 }
 
-let lesson = document.querySelector('#js-selector').addEventListener('submit', (e) => {
+document.querySelector('#js-selector').addEventListener('submit', (e) => {
   e.preventDefault();
   if (e.target.elements.lesson.value === '') {
     setLessonJsScript(e.target.elements.lesson.placeholder);
