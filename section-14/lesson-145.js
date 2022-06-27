@@ -5,7 +5,7 @@
 const li = document.querySelector('li');
 
 // Get the computed style of the li element.
-// developer.mozilla.org/en-US/docs/Web/API/Element/getComputedStyle
+// https://developer.mozilla.org/en-US/docs/Web/API/Element/getComputedStyle
 const computedStyle = getComputedStyle(li);
 console.log(computedStyle);
 
