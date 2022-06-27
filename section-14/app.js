@@ -5,7 +5,7 @@
 // variable name conflicts when loading lessons.
 
 // Set this to true to automatically load placeholder lesson.
-const autoLoadPlaceholder = true;
+let autoLoadPlaceholder = true;
 
 /**
  * It removes the current script tag from the head of the document, then creates a
@@ -14,13 +14,13 @@ const autoLoadPlaceholder = true;
  * @param lesson - The name of the lesson you want to load.
  */
 function setLessonJsScript(lesson) {
-  const setLessonJs = document.getElementById('set-lesson-js');
+  let setLessonJs = document.getElementById('set-lesson-js');
 
   if (setLessonJs !== null) {
     document.head.removeChild(setLessonJs);
   }
 
-  const newScript = document.createElement('script');
+  let newScript = document.createElement('script');
   newScript.id = 'set-lesson-js';
   newScript.src = `lesson-${lesson}.js`;
   newScript.onerror = () => {
@@ -30,7 +30,7 @@ function setLessonJsScript(lesson) {
   document.head.appendChild(newScript);
 }
 
-const lesson = document.querySelector('#js-selector').addEventListener('submit', (e) => {
+let lesson = document.querySelector('#js-selector').addEventListener('submit', (e) => {
   e.preventDefault();
   if (e.target.elements.lesson.value === '') {
     setLessonJsScript(e.target.elements.lesson.placeholder);

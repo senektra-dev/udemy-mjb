@@ -1,8 +1,9 @@
+// Section 14 - Lesson 139
 // innerHTML
 
-const form = document.querySelector('form');
+let form = document.querySelector('form');
 
-// developer.mozilla.org/en-US/docs/Web/API/Node/innerHTML
+// https://developer.mozilla.org/en-US/docs/Web/API/Node/innerHTML
 console.log(form.innerHTML); // Shows everyhing.
 
 // Change the html content of form.
