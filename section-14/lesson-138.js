@@ -1,6 +1,7 @@
 // Working with innerText and textContent
 
 const ul = document.querySelector('ul');
+// developer.mozilla.org/en-US/docs/Web/API/Node/innerText
 console.log(ul.innerText); // Just the text inside the ul
 
 const h1 = document.querySelector('h1');
@@ -11,4 +12,5 @@ ul.innerText = 'Good bye list items'
 
 const main = document.querySelector('#main');
 console.log(main.innerText); // Shows only text inside paragraph.
+// developer.mozilla.org/en-US/docs/Web/API/Node/textContent
 console.log(main.textContent); // Shows all text content without html. 

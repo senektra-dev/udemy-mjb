@@ -1,7 +1,9 @@
+// Section 14 - Lesson 144
 // Altering Styles
 
 const h1 = document.querySelector('h1');
 // Will be undefined if there is no inline style defined for the h1 element.
+// developer.mozilla.org/en-US/docs/Web/API/Element/style
 console.log(h1.style.color);
 
 // Set the color of the h1 element to red.
