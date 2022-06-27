@@ -1,4 +1,8 @@
-// App.js
+// Seciton 14 - app.js
+
+// The lesson javscript files found in this directory use let for variable declarations.
+// Doing so will let us use the same variable names in all the lessons and not cause
+// variable name conflicts when loading lessons.
 
 // Set this to true to automatically load placeholder lesson.
 const autoLoadPlaceholder = true;
