@@ -16,16 +16,12 @@ let autoLoadPlaceholder = true;
 function setLessonJsScript(lesson) {
   let setLessonJs = document.getElementById('set-lesson-js');
 
-  if (setLessonJs !== null) {
-    document.head.removeChild(setLessonJs);
-  }
+  if (setLessonJs !== null) setLessonJs.remove();
 
   let newScript = document.createElement('script');
   newScript.id = 'set-lesson-js';
   newScript.src = `lesson-${lesson}.js`;
-  newScript.onerror = () => {
-    alert('Error loading script');
-  }
+  newScript.onerror = () => alert('Error loading script');
   
   document.head.appendChild(newScript);
 }
