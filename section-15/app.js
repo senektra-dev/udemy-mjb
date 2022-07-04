@@ -1,7 +1,7 @@
 // Seciton 15 - app.js
 
 // Set this to true to automatically load placeholder lesson.
-let autoLoadPlaceholder = false;
+let autoLoadPlaceholder = true;
 
 /**
  * It removes the current script tag from the head of the document, then creates a
