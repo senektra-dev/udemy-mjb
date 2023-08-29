@@ -15,6 +15,7 @@ const members = [
 	}
 ];
 
-const [ , { datum: funFact } ] = members;
+const [ , { datum: funFact }, { name: tismum } ] = members;
 
 console.log(funFact);
+console.log(tismum);
